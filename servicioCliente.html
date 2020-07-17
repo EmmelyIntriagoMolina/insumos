@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../proyecto/cssProyecto/combos.css">
+    <script src="./javaScriptProyecto/servicioCliente.js"></script>
+    <title>Servicio al Cliente</title>
+</head>
+<body>
+    <section class="contenedor">
+        <!--CABECERA-->
+        <header class="general cabecera">
+            <form action="busqueda.html" method="">	
+                
+                <table>
+                    <tr>
+                        <td id="celdaImagen">
+                            <img src="../imagenes/logo4.PNG" alt="">
+                        </td>
+                        
+                        <td colspan="3">
+                            <input type="search" placeholder="Buscar..." width="15%">	
+                        </td>
+                        <td >
+                            <button>Buscar</button>
+                        </td>
+                        <td id="celdaCarrito">
+                            <a href="compra.html"><img src="../imagenes/carritoCompras.png" alt="No se puede cargar la imágen" height="30"  width="30" ></a> <br>
+                            <a href="compra.html">Mis Compras</a>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </form>
+        </header>
+        
+        <!--MENÚ-->
+        <nav class="general " id="menu">
+            <ul class="lista">
+                <li><a href="paginaPrincipal.html">Inicio
+                    <ul> 
+                        <li><a href="alcoholPrincipal.html">Alcohol</a> </li>
+                        <li><a href="alcoholPrincipal.html">Alcohol en Gel</a> </li>
+                        <li><a href="BATAS.HTML">Batas Quirúrgicas</a> </li>
+                        <li><a href="botas.html">Botas Quirúrgicas</a></li>
+                        <li><a href="guantes.html">Guantes Quirúrgicos</a></li>
+                        <li><a href="gorro.html">Gorros Quirúrgicos</a></li>
+                        <li><a href="mascaras.html">Máscaras de Protección</a> </li>
+                        <li><a href="mascarillas.html">Macarillas Quirúrgicas</a> </li> <!--Cada uno de las secciones será mostrado dentro del menú desplegable-->
+                        <li><a href="trajes.html">Trajes de Bioseguridad</a> </li>
+                    </ul>
+                    
+                </li>
+             <!--Las siguientes secciones del menú permiten acceder de forma rápida a otras secciones de nuestra página-->
+                <li><a href="combos.html">Ofertas</a> </li> <!--Se mostrarán productos combinados entre sí, para fayor facilidad de selección-->
+                <li><a href="servicioCliente.html">Servicio al Cliente</a> </li> <!-- mostrará datos de contacto o para presentar alguna queja en caso de ser requerido-->
+                <li><a href="registro.html">Registro</a> </li> <!-- muestra el perfil laboral/estudiantil del desarrollador y la finalidad de realizar esta página web-->
+                <li><a href="iniciarSesion.html">Iniciar Sesión</a> </li> <!--Esta sección será la más dinámica, ya que se realizarán cambios constantemente para ofrecer mejores precios a los clientes-->
+                
+                
+            </ul>
+        </nav>
+
+        <!--REDES-->
+        <section class="ordenar">
+            <table>
+                <tr>
+                    <td>
+                        <img src="../imagenes/logoFacebook.png" alt="No se puede cargar" width="50px" height="45px">
+                    </td>
+                    <td>@VentaInsuMed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../imagenes/logoInstagram.png" alt="No se puede cargar"width="35px" height="30px">
+                    </td>
+                    <td>@VentaInsuMed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../imagenes/logoTwitter.png" alt="No se puede cargar"width="50px" height="45px">
+                    </td>
+                    <td>@VentaInsuMed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../imagenes/logoWsp.png" alt="No se puede cargar"width="35px" height="35px">
+                    </td>
+                    <td>0991827349-0982718274</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../imagenes/logoGmail.png" alt="No se puede cargar" width="35px" height="35px">
+                    </td>
+                    <td>ventamed@gmail.com.org</td>
+                </tr>
+                
+                
+            </table>
+
+        </section>
+
+
+
+        <!--Contenido-->
+        <section class="contenido">
+            <form action="./servicioCliente.html" method="GET" name="servicioCliente" id="servicioCliente">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="txttitulo">Título:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="txttitulo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtAsunto">Asunto:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtAsunto">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtDescripcion">Descripción</label>
+                        </td>
+                        <td>
+                            <textarea name="descripcion" id="txtDescripcion" cols="26" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="bt1" id="btnEnviar">Enviar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <!--CHAT EN LÍNEA-->
+            <section class="chat">
+                <form name="publish">
+                    <table>
+                        <tr>
+                            <td>
+                                <label> Escriba aquí para contactarse en línea con un asistente</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="message" placeholder="Mi inquietud es...">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Enviar" id="btnchat">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <!--AQUÍ SE MOSTRARÁN LOS MENSAJES-->
+                <div id="messages"></div>
+            </section>
+            
+        </section>
+
+
+        <!--pie-->
+        <footer class="general pie">
+                
+            <table>
+                <tr>
+                    <td><label><a href="desarrollador.html">Acerca del Desarrollador</a></label></td>
+                </tr>
+                <tr>
+                    <td><label><a href="pagina.html">Acerca de la Página</a></label></td>
+                </tr>
+                <tr>
+                    <td><label>Emmely Intriago, Manta-Ecuador © Copyright 2020</label></td>
+                </tr>
+            </table>
+            
+        </footer>
+    </section>     
+</body>
+</html>

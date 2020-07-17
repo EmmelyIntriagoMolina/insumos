@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Insumos</title>
+    <link rel="stylesheet" href="./cssProyecto/paginaPrincipal.css">
+    
+    <script src="./javaScriptProyecto/paginaPrincipal.js"></script>    
+
+</head>
+<body>
+
+    <section class="contenedor">
+        <!--CABECERA-->
+        <header class="general cabecera">
+            <form action="busqueda.html" method="">	
+                
+                <table>
+                    <tr>
+                        <td id="celdaImagen">
+                            <img src="../imagenes/logo4.PNG" alt="">
+                        </td>
+                        
+                        <td colspan="3">
+                            <input type="search" placeholder="Buscar..." width="15%">	
+                        </td>
+                        <td >
+                            <button>Buscar</button>
+                        </td>
+                        <td id="celdaCarrito">
+                            <a href="compra.html"><img src="../imagenes/carritoCompras.png" alt="No se puede cargar la imágen" height="30"  width="30" ></a> <br>
+                            <a href="compra.html">Mis Compras</a>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </form>
+        </header>
+        
+        <!--MENÚ-->
+        <nav class="general " id="menu">
+            <ul class="lista">
+                <li><a href="paginaPrincipal.html">Inicio
+                    <ul> 
+                        <li><a href="alcoholPrincipal.html">Alcohol</a> </li>
+                        <li><a href="alcoholPrincipal.html">Alcohol en Gel</a> </li>
+                        <li><a href="BATAS.HTML">Batas Quirúrgicas</a> </li>
+                        <li><a href="botas.html">Botas Quirúrgicas</a></li>
+                        <li><a href="guantes.html">Guantes Quirúrgicos</a></li>
+                        <li><a href="gorro.html">Gorros Quirúrgicos</a></li>
+                        <li><a href="mascaras.html">Máscaras de Protección</a> </li>
+                        <li><a href="mascarillas.html">Macarillas Quirúrgicas</a> </li> <!--Cada uno de las secciones será mostrado dentro del menú desplegable-->
+                        <li><a href="trajes.html">Trajes de Bioseguridad</a> </li>
+                    </ul>
+                    
+                </li>
+             <!--Las siguientes secciones del menú permiten acceder de forma rápida a otras secciones de nuestra página-->
+                <li><a href="combos.html">Ofertas</a> </li> <!--Se mostrarán productos combinados entre sí, para fayor facilidad de selección-->
+                <li><a href="servicioCliente.html">Servicio al Cliente</a> </li> <!-- mostrará datos de contacto o para presentar alguna queja en caso de ser requerido-->
+                <li><a href="registro.html">Registro</a> </li> <!-- muestra el perfil laboral/estudiantil del desarrollador y la finalidad de realizar esta página web-->
+                <li><a href="iniciarSesion.html">Iniciar Sesión</a> </li> <!--Esta sección será la más dinámica, ya que se realizarán cambios constantemente para ofrecer mejores precios a los clientes-->
+                
+                
+            </ul>
+        </nav>
+
+        <!--VIDEO-->
+        <section class="general video"> 
+            <video src="../videos/emergenciaCovid.mp4" autoplay controls loop width="100%" ></video>
+        </section>
+
+        <!--SUBMENU-->
+        <section class="general submenu"></section>
+            <label>Categorías populares</label>
+            <section class="contenedorSubmenu">
+                <section class="iconos">
+                    <a href="mascarillas.html"><img src="../imagenes/iconoMascarilla.svg" alt="No se puede cargar la imágen" width="200px" height="100px"></a>
+                    <p>MASCARILLAS</p>
+                </section>
+
+                <section class="iconos">
+                    <a href="BATAS.HTML"><img src="../imagenes/iconoBata.png" alt="No se puede cargar la imágen" width="150px" height="100px"></a>
+                    <p>BATAS</p>
+                </section>
+
+                <section class="iconos">
+                    <a href="guantes.html"><img src="../imagenes/iconoGuantes.png" alt="No se puede cargar la imágen" width="150px" height="100px"></a>
+                    <p>GUANTES</p>
+                </section>
+                <section class="iconos">
+                    <a href="gorro.html"><img src="../imagenes/iconoGorro.png" alt="No se puede cargar la imágen" width="150px" height="100px"></a>
+                    <p>GORROS</p>
+                </section>
+
+                <section class="iconos">
+                    <a href="alcoholPrincipal.html"><img src="../imagenes/iconoAlcohol.png" alt="No se puede cargar la imágen" width="150px" height="100px"></a>
+                    <p>ALCOHOLES</p>
+                </section>
+
+                <section class="iconos">
+                    <a href="mascaras.html"><img src="../imagenes/iconoMascara.png" alt="No se puede cargar la imágen" width="150px" height="100px"></a>
+                    <p>MÁSCARA DE PROTECCIÓN</p>
+                </section>
+                
+                <section class="cuadroOfertas">
+                    <a href="combos.html"><img src="../imagenes/coronavirus.png" alt="No se puede cargar la imágen" width="100%" ></a>
+                </section>
+            </section>
+        </section>
+
+       
+        <!--PIE DE PAGINA-->
+        <footer class="general pie">
+            
+            <table>
+                <tr>
+                    <td><label><a href="desarrollador.html">Acerca del Desarrollador</a></label></td>
+                </tr>
+                <tr>
+                    <td><label><a href="pagina.html">Acerca de la Página</a></label></td>
+                </tr>
+                <tr>
+                    <td><label>Emmely Intriago, Manta-Ecuador © Copyright 2020</label></td>
+                </tr>
+            </table>
+            
+        </footer>
+    </section>
+</body>
+</html>
